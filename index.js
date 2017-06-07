@@ -6,9 +6,8 @@ const fs = require('fs');
 const Generator = require("./src/Generator.js");
 
 const __path = path.resolve();
-const __config = "";
-// const __config = require(__path + '/tempjs.json');
+const __config = require(__path + '/templateJS.json');
 
 const generator = new Generator(__path, __config);
 
-generator.getJSON();
+generator.getNewFileContent();

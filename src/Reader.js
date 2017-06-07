@@ -1,8 +1,8 @@
 const fs = require('fs');
 
 class Reader {
-    constructor () {
-
+    constructor (path) {
+        this.__path = path;
     }
     readJS ( path ) {
         let string = "";
