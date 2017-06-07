@@ -1,0 +1,9 @@
+{
+    "version": "1.0.0",
+    "extension":".js",
+    "src": [
+        "/src/",
+        "/index.js"
+    ],
+    "outputPath": "/doc"
+}
