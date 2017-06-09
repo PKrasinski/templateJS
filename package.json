@@ -12,7 +12,8 @@
   "license": "ISC",
   "dependencies": {
     "fs": "0.0.1-security",
-    "handlebars": "^4.0.10"
+    "handlebars": "^4.0.10",
+    "watch": "^1.0.2"
   },
   "devDependencies": {},
   "repository": {
