@@ -11,9 +11,7 @@
   "author": "Przemysław Krasiński",
   "license": "ISC",
   "dependencies": {
-    "fs": "0.0.1-security",
-    "handlebars": "^4.0.10",
-    "uglify-js": "^3.0.15"
+    "fs": "0.0.1-security"
   },
   "devDependencies": {
     "npm-scripts-watcher": "^1.0.2"
