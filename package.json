@@ -6,16 +6,18 @@
     "templateJS": "./index.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\""
+    "test": "echo \"Error: no test specified\"",
   },
   "author": "Przemysław Krasiński",
   "license": "ISC",
   "dependencies": {
     "fs": "0.0.1-security",
     "handlebars": "^4.0.10",
-    "watch": "^1.0.2"
+    "uglify-js": "^3.0.15"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "npm-scripts-watcher": "^1.0.2"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/PKrasinski/templateJS.git"

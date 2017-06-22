@@ -1,4 +1,5 @@
 const fs = require('fs');
+const UglifyJS = require("uglify-js");
 
 String.prototype.replaceAll = function(search, replacement) {
     var target = this;
@@ -38,10 +39,12 @@ class Generator {
             const val = el.split("{%");
             if(data[index]){
                 text += (val[0] + data[index]);
+                console.log(text);
             }
             else
                 text += val[0];
         })
+        // text = UglifyJS.minify(text);
         fs.writeFile(path + "\\index.min.js", text, function(err) {
             if(err) {
                 return console.log(err);
@@ -60,7 +63,7 @@ class Generator {
                 if (err) {
                     throw err;
                 }
-                data.push("'" + com.replaceAll("{{","' + ").replaceAll("}}"," + '").replace(/(\r\n|\n|\r|\t)/gm,"").replaceAll("    ","") + "'");
+                data[index] = "'" + com.replaceAll("{{","' + (").replaceAll("}}",") + '").replace(/(\r\n|\n|\r|\t)/gm,"").replaceAll("    ","") + "'";
             });
         })
     }
